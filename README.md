@@ -1,7 +1,7 @@
 # Would You Rather?
 React & Redux Project — Udacity React Developer Nanodegree
 
-## TL;DR
+## About the Project
 This project consists of a small quiz game,  built in React & Redux, that quizzes the user with questions in a *"Would You Rather..."* format. It allows the user to login, post questions and also vote on questions posted by other users.
 
 ## Tech Stack
