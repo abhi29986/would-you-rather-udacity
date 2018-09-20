@@ -5,7 +5,8 @@ import { handleInitialData } from "./actions";
 import Dashboard from "./components/dashboard/Dashboard";
 import Leaderboard from "./components/dashboard/Leaderboard";
 import Login from "./components/auth/Login";
-import Nav from "./components/navigation/Nav";
+import Nav from "./components/layout/Nav";
+import Footer from "./components/layout/Footer";
 import NewQuestion from "./components/question/NewQuestion";
 import NotFound from "./components/not-found/NotFound";
 import QuestionPage from "./components/question/QuestionPage";
@@ -54,6 +55,7 @@ class App extends Component {
                 <Route component={NotFound} />
               </Switch>
             </div>
+			<Footer/>
           </div>
         </Fragment>
       </Router>

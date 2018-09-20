@@ -221,7 +221,11 @@ li {
   float: right;
   color: #202021;
 }
-
+footer {
+  margin: 35px auto;
+  padding-left: 0;
+  text-align: center;
+}
 .option {
   padding: 0px;
   width: 135px;
