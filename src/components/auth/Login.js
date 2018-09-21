@@ -15,7 +15,7 @@ class Login extends Component {
   handleSelectionChanged = event => {
     const userId = event.target.value;
 
-    this.setState(function(previousState) {
+    this.setState(previousState=> {
       return {
         ...previousState,
         userId
@@ -29,7 +29,7 @@ class Login extends Component {
 
     dispatch(setAuthedUser(userId));
 
-    this.setState(function(previousState) {
+    this.setState(previousState=> {
       return {
         ...previousState,
         toHome: true

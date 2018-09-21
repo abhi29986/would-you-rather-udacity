@@ -1,9 +1,9 @@
 import { ANSWER_QUESTION } from "../actions/types";
 
 //function to check options
-export default function optionChecker(store) {
-  return function(next) {
-    return function(action) {
+const optionChecker = store => {
+  return next => {
+    return action => {
       if (action.type === ANSWER_QUESTION) {
         const users = store.getState().users;
         const answers = Object.keys(users[action.authedUser].answers);
@@ -14,4 +14,6 @@ export default function optionChecker(store) {
       return next(action);
     };
   };
-}
+};
+
+export default optionChecker;

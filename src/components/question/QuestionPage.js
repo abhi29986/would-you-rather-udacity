@@ -6,7 +6,7 @@ import Question from "./Question";
 function QuestionPage(props) {
   const { id, questions } = props;
   const question = questions[id];
-
+// If no question is found , redirect to page not found.
   if (question == null) {
     return <Redirect from="*" to="/not-found" />;
   }

@@ -10,10 +10,10 @@ class NewQuestion extends Component {
     toHome: false
   };
 
-  handleChange = function(event, optionIndex) {
+  handleChange = (event, optionIndex)=> {
     const text = event.target.value;
 
-    this.setState(function(previousState) {
+    this.setState(previousState=> {
       return optionIndex === 1
         ? { ...previousState, optionOne: text }
         : { ...previousState, optionTwo: text };
@@ -27,7 +27,7 @@ class NewQuestion extends Component {
     const { dispatch } = this.props;
     dispatch(handleAddQuestion(optionOne, optionTwo));
 
-    this.setState(function(previousState) {
+    this.setState(previousState=> {
       return {
         ...previousState,
         toHome: true
