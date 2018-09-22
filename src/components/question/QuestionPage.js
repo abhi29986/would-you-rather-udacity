@@ -19,7 +19,7 @@ function QuestionPage(props) {
   );
 }
 
-function mapStateToProps({ authedUser, questions }, props) {
+const mapStateToProps=({ authedUser, questions }, props)=> {
   const { id } = props.match.params;
 
   return {
